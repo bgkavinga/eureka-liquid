@@ -7,6 +7,7 @@ const path = require('path');
 
 module.exports = {
   'cssVarLoader.liquidPath': ['src/snippets/css-variables.liquid'],
+  
   'webpack.extend': {
     resolve: {
       alias: {
@@ -14,5 +15,16 @@ module.exports = {
         'lodash-es': path.resolve('./node_modules/lodash-es'),
       },
     },
+    module: {
+      rules: [{
+        test: /\.scss$/,
+          use: [{
+              loader: "sass-loader",
+              options: {
+                  includePaths: ["node_modules/foundation-sites/scss"]
+              }
+          }]
+      }]
+  }
   },
 };
