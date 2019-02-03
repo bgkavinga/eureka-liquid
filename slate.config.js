@@ -21,7 +21,7 @@ module.exports = {
           use: [{
               loader: "sass-loader",
               options: {
-                  includePaths: ["node_modules/foundation-sites/scss"]
+                  includePaths: ["node_modules/foundation-sites/scss","node_modules/motion-ui/src"]
               }
           }]
       }]
