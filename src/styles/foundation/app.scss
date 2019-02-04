@@ -4,6 +4,8 @@
 @import 'foundation';
 @import 'motion-ui';
 
+@import 'components/top-bar';
+
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
