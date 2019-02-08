@@ -2,4 +2,6 @@
 
 @import './foundation/app';
 
-@import 'templates/home';
+// Custom Sections
+@import 'sections/home-slider';
+@import 'sections/new-arrivals';
